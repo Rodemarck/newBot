@@ -1,0 +1,26 @@
+plugins {
+    id'java'
+    id'application'
+    id'com.github.johnrengelman.shadow' version '6.0.0'
+}
+
+mainClassName = 'br.rodemarck.Main'
+
+version '1.0'
+
+sourceCompatibility = 14
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'net.dv8tion:JDA:4.2.0_194'
+    implementation 'com.jagrosh:jda-utilities:3.0.2'
+
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    implementation 'org.projectlombok:lombok:1.18.12'
+
+}
+
+compileJava.options.encoding = 'UTF-8'
